@@ -47,12 +47,14 @@ Document at least 3 bugs you found. Add rows as needed.
   and what it showed you about your code.
   - For the initial hint fix I manually tested the fix by running the game with various inputs that were deliberately lower/higher relative to the secret and verifying that the hints were displayed correctly, this showed me that the hints were inverted.
 - Did AI help you design or understand any tests? How?
+  - Yes, the AI helped me design the test for the new game button by using the streamlit testing library since we can't use the standard testing methods for frontend development and I'm not too familiar with frontend testing and development.
 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+  - Streamlit "reruns" occur when the app needs to update its display, often triggered by user interactions or changes in the session state. The "session state" is a dictionary that stores variables across these reruns, allowing the app to remember values between updates.
 
 ---
 
@@ -60,5 +62,8 @@ Document at least 3 bugs you found. Add rows as needed.
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+    - A strategy that worked was keeping the AI focused on making the smallest changes necessary to fix the issues. This made it easy to identify and fix the root causes of the problems, and verify the generated solution worked without affecting anything else.
 - What is one thing you would do differently next time you work with AI on a coding task?
+  - One thing I would do differently is to be more cautious about accepting AI suggestions without thoroughly testing them in the context of the entire application.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+  - This project made me realize that while AI can generate code quickly, it's crucial to understand the underlying logic and test thoroughly to ensure the code works as expected in all scenarios.
